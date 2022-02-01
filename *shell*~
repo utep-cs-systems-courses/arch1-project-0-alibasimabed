@@ -1,0 +1,97 @@
+student@systems-vm:~/arch1-project-0-alibasimabed> make
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+In file included from draw_shapes.c:2:0:
+draw.h:7:1: error: unknown type name ‘vodi’; did you mean ‘void’?
+ vodi draw_arrow(int a, int b);
+ ^~~~
+ void
+draw_shapes.c:29:6: error: conflicting types for ‘draw_arrow’
+ void draw_arrow(int a, int b){
+      ^~~~~~~~~~
+In file included from draw_shapes.c:2:0:
+draw.h:7:6: note: previous declaration of ‘draw_arrow’ was here
+ vodi draw_arrow(int a, int b);
+      ^~~~~~~~~~
+draw_shapes.c: In function ‘draw_arrow’:
+draw_shapes.c:38:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+make: *** [<builtin>: draw_shapes.o] Error 1
+student@systems-vm:~/arch1-project-0-alibasimabed> cd
+student@systems-vm:~> ls
+arch1-project-0-alibasimabed  Desktop    Downloads  Pictures  Templates  ti
+bin                           Documents  Music      Public    testCode   Videos
+student@systems-vm:~>ls
+arch1-project-0-alibasimabed  Documents  Pictures   testCode
+bin                           Downloads  Public     ti
+Desktop                       Music      Templates  Videos
+student@systems-vm:~> cd arch1-project-0-alibasimabed/
+student@systems-vm:~/arch1-project-0-alibasimabed> make
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+In file included from draw_shapes.c:2:0:
+draw.h:7:1: error: unknown type name ‘vodi’; did you mean ‘void’?
+ vodi draw_arrow(int a, int b):
+ ^~~~
+ void
+draw.h: In function ‘draw_arrow’:
+draw.h:7:30: error: expected declaration specifiers before ‘:’ token
+ vodi draw_arrow(int a, int b):
+                              ^
+draw.h:14:28: error: storage class specified for parameter ‘font_5x7’
+ extern const unsigned char font_5x7[96][5];
+                            ^~~~~~~~
+draw.h:15:28: error: storage class specified for parameter ‘font_8x12’
+ extern const unsigned char font_8x12[95][12];
+                            ^~~~~~~~~
+draw_shapes.c:6:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+draw_shapes.c:19:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+draw_shapes.c:29:30: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ void draw_arrow(int a, int b){
+                              ^
+In file included from draw_shapes.c:2:0:
+draw.h:7:6: error: old-style parameter declarations in prototyped function definition
+ vodi draw_arrow(int a, int b):
+      ^~~~~~~~~~
+draw_shapes.c:38:1: error: expected ‘{’ at end of input
+ }
+ ^
+make: *** [<builtin>: draw_shapes.o] Error 1
+student@systems-vm:~/arch1-project-0-alibasimabed> make
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+In file included from draw_shapes.c:2:0:
+draw.h:7:1: error: unknown type name ‘vodi’; did you mean ‘void’?
+ vodi draw_arrow(int a, int b):
+ ^~~~
+ void
+draw.h: In function ‘draw_arrow’:
+draw.h:7:30: error: expected declaration specifiers before ‘:’ token
+ vodi draw_arrow(int a, int b):
+                              ^
+draw.h:14:28: error: storage class specified for parameter ‘font_5x7’
+ extern const unsigned char font_5x7[96][5];
+                            ^~~~~~~~
+draw.h:15:28: error: storage class specified for parameter ‘font_8x12’
+ extern const unsigned char font_8x12[95][12];
+                            ^~~~~~~~~
+draw_shapes.c:6:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+draw_shapes.c:19:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+draw_shapes.c:29:39: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ void draw_arrow(int leftCol, int size){
+                                       ^
+In file included from draw_shapes.c:2:0:
+draw.h:7:6: error: old-style parameter declarations in prototyped function definition
+ vodi draw_arrow(int a, int b):
+      ^~~~~~~~~~
+draw_shapes.c:33:1: error: expected ‘{’ at end of input
+ }
+ ^
+make: *** [<builtin>: draw_shapes.o] Error 1
+student@systems-vm:~/arch1-project-0-alibasimabed> 
